@@ -1,0 +1,246 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/hh"
+    tools:context="example.com.example.tabbedd$PlaceholderFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/bookdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Details"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/bookname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_below="@+id/bookdetails"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="8dp"
+        android:textSize="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="8dp"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/bookname"
+        android:layout_below="@+id/bookdetails"
+        android:background="@drawable/round"
+        android:id="@+id/namefield" />
+
+
+    <TextView
+        android:id="@+id/bookcondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Condition"
+        android:layout_below="@+id/namefield"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/bookcondition"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/namefield"
+        android:background="@drawable/round"
+        android:singleLine="true"
+        android:id="@+id/conditionfield" />
+
+    <TextView
+        android:id="@+id/postdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PostDate"
+        android:layout_below="@+id/conditionfield"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/postdate"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/conditionfield"
+        android:background="@drawable/round"
+        android:singleLine="true"
+        android:id="@+id/editpostdate" />
+
+
+    <TextView
+        android:id="@+id/expirydate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ExpiryDate"
+        android:layout_below="@+id/editpostdate"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/expirydate"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/editpostdate"
+        android:background="@drawable/round"
+        android:singleLine="true"
+        android:id="@+id/editexpirydate" />
+
+
+
+    <TextView
+        android:id="@+id/bookdescrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:layout_below="@+id/editexpirydate"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/bookdescrip"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/editexpirydate"
+        android:background="@drawable/round"
+        android:singleLine="true"
+        android:id="@+id/editdescription" />
+
+
+
+    <TextView
+        android:id="@+id/sellerdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seller Details"
+        android:layout_below="@+id/bookdescrip"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/sellername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_below="@+id/sellerdetail"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/sellername"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/sellerdetail"
+        android:background="@drawable/round"
+        android:singleLine="true"
+        android:id="@+id/editsellername" />
+
+    <TextView
+        android:id="@+id/sellerlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:layout_below="@+id/editsellername"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/sellerlocation"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/editsellername"
+        android:background="@drawable/round"
+        android:singleLine="true"
+        android:id="@+id/editsellerlocation" />
+
+
+    <TextView
+        android:id="@+id/contactno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Number"
+        android:layout_below="@+id/editsellerlocation"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/contactno"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/editsellerlocation"
+        android:background="@drawable/round"
+        android:singleLine="true"
+        android:id="@+id/editcontact" />
+
+
+
+    <Button
+        android:id="@+id/bookpost"
+        style="@style/Animation.AppCompat.DropDownUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contactno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/black"
+        android:onClick="OnPostClick"
+        android:text="Post"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
+</ScrollView>
